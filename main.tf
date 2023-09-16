@@ -6,10 +6,11 @@ provider "aws" {
 }
 
 resource "aws_instance" "name" {
-    ami = "ami-05552d2dcf89c9b24"
+     ami = "ami-05552d2dcf89c9b24"
     instance_type = "t2.micro"
     key_name = "Tom"
     tags = {
         name = "5pmbatch"
     }
+  
 }
